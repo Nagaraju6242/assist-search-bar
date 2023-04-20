@@ -35,7 +35,6 @@ body{
     padding: 10px 15px;
     font-size: 25px;
     border: none;
-    margin-bottom: 10px;
     background-color: transparent;
     border-bottom: 1px solid rgba(34, 34, 34, 0.3);
 }
@@ -48,8 +47,8 @@ body{
     color: rgba(70, 70, 70, 0.5);
 }
 
-.assist-suggestions{
-    padding-bottom: 10px;
+.assist-suggestions:has(> *){
+    padding: 10px 0;
 }
 
 .assist-suggestion{

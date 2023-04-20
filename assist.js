@@ -1,5 +1,13 @@
 const ACTIVATE_PRESS_DELAY = 500;
 const SEARCH_DELAY = 50;
+const HTML = `
+<div class="assist-container" id="assist">
+    <input type="text" class="assist-input" id="assist-input" placeholder="Search">
+    <div class="assist-suggestions" id="assist-suggestions">
+    </div>
+</div>
+`
+document.body.insertAdjacentHTML("beforeend", HTML);
 
 function displayFormattedText(text){
     console.log(`%c${text}`, 'color: yellow; font-size: 13px;padding: 2px 5px; background-color: black');
